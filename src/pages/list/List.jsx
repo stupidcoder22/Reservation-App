@@ -3,9 +3,9 @@ import { useLocation } from "react-router-dom";
 import { useState } from "react";
 import { format } from "date-fns";
 import { DateRange } from "react-date-range";
-// import SearchItem from "../../components/searchItem/SearchItem";
 import Navbar from "../../Components/navbar/Navbar";
 import Header from "../../Components/header/Header";
+import SearchItem from "../../components/searchItem/SearchItem";
 
 const List = () => {
   const location = useLocation();
@@ -86,17 +86,9 @@ const List = () => {
             </div>
             <button>Search</button>
           </div>
-          {/* <div className="listResult">
+          <div className="listResult">
             <SearchItem />
-            <SearchItem />
-            <SearchItem />
-            <SearchItem />
-            <SearchItem />
-            <SearchItem />
-            <SearchItem />
-            <SearchItem />
-            <SearchItem />
-          </div> */}
+          </div>
         </div>
       </div>
     </div>
